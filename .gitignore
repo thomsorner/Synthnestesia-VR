@@ -1,0 +1,1 @@
+-e "Library/\nTemp/\nObj/\nBuild/\nLogs/\n*.log\n*.cubemap" 

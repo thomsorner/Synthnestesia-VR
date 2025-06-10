@@ -1,0 +1,137 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    xmlns:tools="http://schemas.android.com/tools"
+4    package="com.unity3d.player" >
+5
+6    <uses-sdk android:minSdkVersion="31" />
+6-->C:\Users\tsole\OneDrive\Documentos\GitHub\pruebavr3\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml
+7
+8    <uses-permission android:name="android.permission.INTERNET" />
+8-->C:\Users\tsole\OneDrive\Documentos\GitHub\pruebavr3\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:3:3-65
+8-->C:\Users\tsole\OneDrive\Documentos\GitHub\pruebavr3\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:3:20-62
+9    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+9-->C:\Users\tsole\OneDrive\Documentos\GitHub\pruebavr3\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:3-69
+9-->C:\Users\tsole\OneDrive\Documentos\GitHub\pruebavr3\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:20-66
+10    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+10-->C:\Users\tsole\OneDrive\Documentos\GitHub\pruebavr3\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:5:3-78
+10-->C:\Users\tsole\OneDrive\Documentos\GitHub\pruebavr3\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:5:20-75
+11    <uses-permission android:name="android.permission.BLUETOOTH" />
+11-->C:\Users\tsole\OneDrive\Documentos\GitHub\pruebavr3\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:6:3-66
+11-->C:\Users\tsole\OneDrive\Documentos\GitHub\pruebavr3\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:6:20-63
+12
+13    <uses-feature android:glEsVersion="0x00030000" />
+13-->C:\Users\tsole\OneDrive\Documentos\GitHub\pruebavr3\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:7:3-52
+13-->C:\Users\tsole\OneDrive\Documentos\GitHub\pruebavr3\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:7:17-49
+14    <uses-feature
+14-->C:\Users\tsole\OneDrive\Documentos\GitHub\pruebavr3\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:8:3-87
+15        android:name="android.hardware.microphone"
+15-->C:\Users\tsole\OneDrive\Documentos\GitHub\pruebavr3\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:8:17-59
+16        android:required="false" />
+16-->C:\Users\tsole\OneDrive\Documentos\GitHub\pruebavr3\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:8:60-84
+17    <uses-feature
+17-->C:\Users\tsole\OneDrive\Documentos\GitHub\pruebavr3\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:9:3-88
+18        android:name="android.hardware.touchscreen"
+18-->C:\Users\tsole\OneDrive\Documentos\GitHub\pruebavr3\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:9:17-60
+19        android:required="false" />
+19-->C:\Users\tsole\OneDrive\Documentos\GitHub\pruebavr3\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:9:61-85
+20    <uses-feature
+20-->C:\Users\tsole\OneDrive\Documentos\GitHub\pruebavr3\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:10:3-99
+21        android:name="android.hardware.touchscreen.multitouch"
+21-->C:\Users\tsole\OneDrive\Documentos\GitHub\pruebavr3\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:10:17-71
+22        android:required="false" />
+22-->C:\Users\tsole\OneDrive\Documentos\GitHub\pruebavr3\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:10:72-96
+23    <uses-feature
+23-->C:\Users\tsole\OneDrive\Documentos\GitHub\pruebavr3\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:11:3-108
+24        android:name="android.hardware.touchscreen.multitouch.distinct"
+24-->C:\Users\tsole\OneDrive\Documentos\GitHub\pruebavr3\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:11:17-80
+25        android:required="false" />
+25-->C:\Users\tsole\OneDrive\Documentos\GitHub\pruebavr3\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:11:81-105
+26
+27    <application
+27-->C:\Users\tsole\OneDrive\Documentos\GitHub\pruebavr3\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:12:3-27:17
+28        android:extractNativeLibs="true"
+28-->C:\Users\tsole\OneDrive\Documentos\GitHub\pruebavr3\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:12:60-92
+29        android:requestLegacyExternalStorage="true" >
+29-->C:\Users\tsole\OneDrive\Documentos\GitHub\pruebavr3\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:12:16-59
+30        <meta-data
+30-->C:\Users\tsole\OneDrive\Documentos\GitHub\pruebavr3\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:13:5-69
+31            android:name="unity.splash-mode"
+31-->C:\Users\tsole\OneDrive\Documentos\GitHub\pruebavr3\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:13:16-48
+32            android:value="0" />
+32-->C:\Users\tsole\OneDrive\Documentos\GitHub\pruebavr3\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:13:49-66
+33        <meta-data
+33-->C:\Users\tsole\OneDrive\Documentos\GitHub\pruebavr3\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:14:5-74
+34            android:name="unity.splash-enable"
+34-->C:\Users\tsole\OneDrive\Documentos\GitHub\pruebavr3\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:14:16-50
+35            android:value="True" />
+35-->C:\Users\tsole\OneDrive\Documentos\GitHub\pruebavr3\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:14:51-71
+36        <meta-data
+36-->C:\Users\tsole\OneDrive\Documentos\GitHub\pruebavr3\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:15:5-78
+37            android:name="unity.launch-fullscreen"
+37-->C:\Users\tsole\OneDrive\Documentos\GitHub\pruebavr3\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:15:16-54
+38            android:value="True" />
+38-->C:\Users\tsole\OneDrive\Documentos\GitHub\pruebavr3\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:15:55-75
+39        <meta-data
+39-->C:\Users\tsole\OneDrive\Documentos\GitHub\pruebavr3\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:16:5-84
+40            android:name="unity.render-outside-safearea"
+40-->C:\Users\tsole\OneDrive\Documentos\GitHub\pruebavr3\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:16:16-60
+41            android:value="True" />
+41-->C:\Users\tsole\OneDrive\Documentos\GitHub\pruebavr3\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:16:61-81
+42        <meta-data
+42-->C:\Users\tsole\OneDrive\Documentos\GitHub\pruebavr3\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:17:5-81
+43            android:name="notch.config"
+43-->C:\Users\tsole\OneDrive\Documentos\GitHub\pruebavr3\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:17:16-43
+44            android:value="portrait|landscape" />
+44-->C:\Users\tsole\OneDrive\Documentos\GitHub\pruebavr3\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:17:44-78
+45        <meta-data
+45-->C:\Users\tsole\OneDrive\Documentos\GitHub\pruebavr3\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:18:5-84
+46            android:name="unity.auto-report-fully-drawn"
+46-->C:\Users\tsole\OneDrive\Documentos\GitHub\pruebavr3\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:18:16-60
+47            android:value="true" />
+47-->C:\Users\tsole\OneDrive\Documentos\GitHub\pruebavr3\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:18:61-81
+48
+49        <activity
+49-->C:\Users\tsole\OneDrive\Documentos\GitHub\pruebavr3\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:19:5-26:16
+50            android:name="com.unity3d.player.UnityPlayerActivity"
+50-->C:\Users\tsole\OneDrive\Documentos\GitHub\pruebavr3\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:19:15-68
+51            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale|layoutDirection|density"
+51-->C:\Users\tsole\OneDrive\Documentos\GitHub\pruebavr3\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:19:181-362
+52            android:exported="true"
+52-->C:\Users\tsole\OneDrive\Documentos\GitHub\pruebavr3\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:19:434-457
+53            android:hardwareAccelerated="false"
+53-->C:\Users\tsole\OneDrive\Documentos\GitHub\pruebavr3\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:19:398-433
+54            android:launchMode="singleTask"
+54-->C:\Users\tsole\OneDrive\Documentos\GitHub\pruebavr3\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:19:149-180
+55            android:resizeableActivity="false"
+55-->C:\Users\tsole\OneDrive\Documentos\GitHub\pruebavr3\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:19:363-397
+56            android:screenOrientation="landscape"
+56-->C:\Users\tsole\OneDrive\Documentos\GitHub\pruebavr3\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:19:111-148
+57            android:theme="@style/UnityThemeSelector" >
+57-->C:\Users\tsole\OneDrive\Documentos\GitHub\pruebavr3\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:19:69-110
+58            <intent-filter>
+58-->C:\Users\tsole\OneDrive\Documentos\GitHub\pruebavr3\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:20:7-23:23
+59                <category android:name="android.intent.category.LAUNCHER" />
+59-->C:\Users\tsole\OneDrive\Documentos\GitHub\pruebavr3\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:21:9-69
+59-->C:\Users\tsole\OneDrive\Documentos\GitHub\pruebavr3\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:21:19-66
+60
+61                <action android:name="android.intent.action.MAIN" />
+61-->C:\Users\tsole\OneDrive\Documentos\GitHub\pruebavr3\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:22:9-61
+61-->C:\Users\tsole\OneDrive\Documentos\GitHub\pruebavr3\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:22:17-58
+62            </intent-filter>
+63
+64            <meta-data
+64-->C:\Users\tsole\OneDrive\Documentos\GitHub\pruebavr3\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:24:7-82
+65                android:name="unityplayer.UnityActivity"
+65-->C:\Users\tsole\OneDrive\Documentos\GitHub\pruebavr3\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:24:18-58
+66                android:value="true" />
+66-->C:\Users\tsole\OneDrive\Documentos\GitHub\pruebavr3\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:24:59-79
+67            <meta-data
+67-->C:\Users\tsole\OneDrive\Documentos\GitHub\pruebavr3\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:25:7-70
+68                android:name="notch_support"
+68-->C:\Users\tsole\OneDrive\Documentos\GitHub\pruebavr3\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:25:18-46
+69                android:value="true" />
+69-->C:\Users\tsole\OneDrive\Documentos\GitHub\pruebavr3\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:25:47-67
+70        </activity>
+71    </application>
+72
+73</manifest>
