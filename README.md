@@ -1,234 +1,71 @@
-Synthnestesia - v0.0.1
+Synthnestesia - v0.0.3
 
 Bitácora abierta de una exploración sinestésica en VR
 
-Estado del proyecto
-
-Este repositorio contiene la versión 0.0.1, una prueba de concepto funcional desarrollada en Unity 2022.3.57f1 para dispositivos Android con integración de Google Cardboard SDK. Esta versión está en una etapa temprana de desarrollo y no constituye un producto final, sino un experimento que busca validar hipótesis técnicas y sensoriales en torno a la sinestesia simulada a través de realidad virtual.
+Este repositorio contiene la versión 0.0.3, una prueba de concepto funcional desarrollada en Unity 2022.3.57f1 para dispositivos Android con integración del SDK de Google Cardboard. Esta versión está en una etapa temprana de desarrollo y no constituye un producto final, sino una serie de experimentos que buscan validar hipótesis técnicas y sensoriales en torno a la sinestesia simulada a través de realidad virtual.
 
 Este espacio no solo recopila el código fuente y documentación técnica, sino que funciona como bitácora de desarrollo y canal de interacción con la comunidad. Tu retroalimentación es valiosa: el proyecto está concebido como un espacio abierto a la colaboración, el aprendizaje colectivo y la construcción compartida.
 
-Objetivo general
-
-Desarrollar una aplicación de realidad virtual (VR) que genere visuales inmersivos en 360° a partir de música que se escucha en tiempo real, simulando una experiencia sinestésica.
-
-Objetivos específicos
-
-Diseñar una identidad visual coherente para la aplicación, inspirada en la estética psicodélica.
-
-Construir un sistema en Unity que analice en tiempo real propiedades sonoras y las transforme en estímulos visuales.
-
-Calibrar la experiencia sinestésica mediante pruebas de usuario iterativas.
-
-Producto mínimo viable (MVP)
-
-Repositorio con modelo funcional básico: visuales en 360° que responden al sonido capturado en tiempo real.
-
-Integración con Google Cardboard SDK en Unity 2022.3.57f1.
-
-Documentación, instalación y bitácora del desarrollo.
-
-Instalación
-Requisitos:
-
-PC con Unity 2022.3.57f1.
-
-SDK Android instalado.
-
-Librerías de Google Cardboard.
-
-Dispositivo Android con gafas VR tipo cardboard.
-
-Git y GitHub.
-
-Pasos básicos:
-
-Clona este repositorio.
-
-Abre el proyecto en Unity (versión especificada).
-
-Instala los paquetes necesarios (Google Cardboard XR Plugin).
-
-Conecta tu dispositivo Android y exporta con configuración de VR.
-
-Ejecuta y prueba el proyecto.
-
-Investigación: Tecnología, Estética y Percepción
-
-Planteamiento del problema
-
 Este proyecto nace del deseo de expandir la percepción humana mediante tecnología inmersiva. Utilizando realidad virtual como medio, busca simular la sinestesia como fenómeno estético, mezclando estímulos auditivos y visuales en un entorno envolvente.
 
-Pregunta de investigación
+Bitácora de desarrollo
 
-¿Es posible construir un entorno de realidad virtual que interprete visualmente música en tiempo real para generar una experiencia sinestésica?
+v0.0.1 — Experimento 1: Captura y análisis de sonido
 
-Metodología
+Se realizó una primera prueba de exploración para la captura de sonido a través del micrófono en Unity. Los datos fueron representados en 7 canales de frecuencia, impresos directamente en la consola para análisis.
+Observaciones: Se evidenció una alta volatilidad en los valores de frecuencia, lo que plantea la necesidad de procesos de suavizado o normalización para futuras visualizaciones.
 
-Desarrollo iterativo con pruebas de usuario.
+v0.0.2 — Experimento 2: Visualización en sliders
 
-Transformación de propiedades sonoras mediante análisis FFT en Unity.
+En esta segunda iteración, los datos de frecuencia fueron conectados a una interfaz visual mediante 7 sliders controlados por un manager. Se implementaron dos mejoras clave: un sistema de amplificación de la señal para mejorar la respuesta visual, y un suavizado para hacer más fluidos los movimientos de los sliders.
 
-Identidad visual guiada por la estética psicodélica.
+Conclusión: Esta metodología demostró ser viable para representar visualmente el sonido en tiempo real. Se identificó la importancia de normalizar los valores y aplicar suavizado para contrarrestar la inestabilidad inherente de los datos espectrales.
 
-Documentación permanente en este README como bitácora viva.
+v0.0.3 — Experimento 3: Primer entorno en VR
 
-Marco teórico (fragmentado)
+Se evaluaron distintas formas de trasladar el experimento a un entorno de realidad virtual. Se consideró usar la plantilla oficial de Unity para VR, pero fue descartada por estar orientada a dispositivos de alta gama (como Oculus) y por su complejidad. La plantilla de Android también fue descartada al no facilitar un entorno VR desde cero. Finalmente, se optó por la plantilla oficial de Google Cardboard, por su enfoque en Android y su integración directa con visualización VR.
 
-Realidad virtual: Definición de Simó (2019): inmersión visual + interacción en tiempo real.
+Se siguió la documentación y guía de instalación oficial de Google, aunque el proceso resultó complejo por la cantidad de parámetros requeridos para compilar correctamente.
 
-Sinestesia: Experiencia cruzada entre sentidos, puede ser inducida artificialmente (Cardoso, 2013).
+La visualización evolucionó a 12 canales de frecuencia dispuestos en forma circular alrededor de la cámara, permitiendo una experiencia inmersiva en 360°, sin desplazamiento del usuario. Cada canal fue conectado a un spawner de partículas, similar a lo hecho con los sliders, pero en este caso con emisión visual dinámica.
+Además, se añadieron variables expuestas en el inspector: amplificación, cantidad de partículas, y una función para ignorar ruido ambiental.
 
-Transhumanismo: Uso de la tecnología para ampliar las capacidades humanas (Diéguez, 2018).
+Conclusión: La herramienta de Google Cardboard demostró ser óptima para los objetivos del proyecto, y será usada como base para el desarrollo de la aplicación por su compatibilidad con Android y VR básico. Se detectaron dificultades al exportar skyboxes para Android, posiblemente por el uso de materiales tipo Skybox/6 Sided no compatibles o requerimientos especiales de URP. Se requiere más investigación.
+Los resultados fueron prometedores: se logró una respuesta visual en tiempo real satisfactoria, aunque se deben seguir ajustando los efectos y trabajar en una identidad visual más definida.
 
-Estado del arte
 
-A VR application that simulates the condition synesthesia and to visualize music
+Synthnestesia - v0.0.3
 
-Simulating Synesthesia in Spatially-Based Real-time Audio-Visual Performance – Steve Gibson
+Open Logbook of a Synesthetic Exploration in VR
 
-Marco Scrum aplicado a producciones audiovisuales (González Valencia, 2022).
+This repository contains version 0.0.3, a functional proof of concept developed in Unity 2022.3.57f1 for Android devices with Google Cardboard SDK integration. This version is in an early stage of development and is not a finished product, but rather a series of experiments aiming to validate technical and sensory hypotheses about simulated synesthesia through virtual reality.
 
-Assets externos utilizados (lista preliminar)
+This space not only compiles the source code and technical documentation, but also serves as a development logbook and channel for community interaction. Your feedback is valuable: the project is conceived as an open space for collaboration, collective learning, and shared creation.
 
-Nombre	Autor/Creador	Licencia	Link (pendiente)
+This project was born from the desire to expand human perception through immersive technology. Using virtual reality as a medium, it aims to simulate synesthesia as an aesthetic phenomenon, blending auditory and visual stimuli in an enveloping environment.
 
-Cardboard XR Plugin	Google	Apache 2.0	[pendiente]
+Development Log
 
-Sistema de partículas	Unity Asset Store Free	Creative Commons	[pendiente]
+v0.0.1 — Experiment 1: Audio capture and analysis
 
-Sonidos de prueba	Freesound.org	CC BY 4.0	[pendiente]
+The first experiment focused on capturing audio through the microphone in Unity. The data was split into 7 frequency bands and printed to the console for observation.
+Observations: The frequency values showed high volatility, indicating the need for smoothing or normalization in future visual representations.
 
-Contribuciones
+v0.0.2 — Experiment 2: Visual interface with sliders
 
-Este proyecto se construye como una herramienta de exploración compartida. Puedes contribuir:
+In this iteration, frequency data was mapped to a visual interface using 7 sliders controlled by a manager. Two key improvements were introduced: a signal amplifier to enhance the visual response, and smoothing for a more fluid slider movement.
 
-Sugerencias conceptuales o estéticas
+Conclusion: This method proved to be a viable way to visually represent real-time sound. The importance of normalizing values and applying smoothing was confirmed due to the inherent volatility of spectral data.
 
-Mejoras de código y rendimiento
+v0.0.3 — Experiment 3: First VR environment
 
-Nuevas formas de visualización o interpretación sonora
+Different approaches were explored to bring the project into a virtual reality environment. Unity’s official VR template was considered but discarded due to its complexity and focus on high-end devices (such as Oculus). The standard Android template was also discarded as it lacked VR integration. Ultimately, the Google Cardboard SDK template was chosen as the most optimal for the project's goals, being Android-focused and already prepared for basic VR visualization.
 
-Cualquier issue, fork o pull request será bienvenido y discutido.
+The official documentation and setup guide from Google were followed, though the installation process proved complex due to numerous configuration parameters.
 
-Conclusiones
+The visualization evolved into 12 frequency channels arranged like a clock around the user’s camera, enabling a 360° immersive experience (without user movement). Each channel was connected to a particle spawner, similarly to how sliders were used in Experiment 2, but this time generating visual feedback in real-time.
+Additionally, several parameters were exposed in the inspector: frequency amplification, particle emission rate, and a toggle to ignore background noise.
 
-(Se completará al cierre del primer ciclo de pruebas)
+Conclusion: The Google Cardboard toolkit proved highly useful and will be used as the foundation for the application due to its Android-oriented approach and built-in VR capabilities. Issues were encountered when exporting skyboxes to Android, likely due to the use of 6-sided skyboxes and rendering settings specific to URP. Further investigation is needed.
+The results of this experiment are promising: a satisfactory real-time visual response was achieved, although further tuning and development of a consistent visual identity are still needed.
 
-Synthnestesia - v0.0.1
-
-An open log of a synesthetic VR exploration
-
-Project status
-
-This is version 0.0.1, a proof of concept developed in Unity 2022.3.57f1 for Android devices using the Google Cardboard SDK. It is an early-stage project, focused on testing technical and perceptual hypotheses rather than delivering a finished product.
-
-This repository works not only as a codebase but also as a development logbook and a space for community engagement. Feedback and collaboration are encouraged.
-
-General Objective
-
-To develop a virtual reality (VR) application that generates immersive 360° visuals from real-time music input, simulating a synesthetic experience.
-
-Specific Objectives
-
-Design a coherent visual identity inspired by psychedelic aesthetics.
-
-Build a real-time audio analysis system in Unity to trigger reactive visuals.
-
-Fine-tune the sensory experience through user testing.
-
-Minimum Viable Product (MVP)
-
-Functional prototype that reacts to real-time sound and displays 360° visuals.
-
-Integrated with Google Cardboard SDK for Unity 2022.3.57f1.
-
-Full documentation and install guide included in this repository.
-
-Installation
-
-Requirements:
-
-PC with Unity 2022.3.57f1.
-
-Android SDK.
-
-Google Cardboard XR libraries.
-
-Android device with mobile VR headset.
-
-Git + GitHub.
-
-Steps:
-
-Clone this repository.
-
-Open the project in Unity (specified version).
-
-Install necessary packages (Cardboard XR Plugin).
-
-Connect your Android device and build the project.
-
-Test and explore the experience.
-
-Research: Technology, Aesthetics, Perception
-
-Problem Statement
-
-The project explores how immersive technology can simulate synesthetic perception, blending visual and auditory stimuli in a shared VR space. It emerges from a personal fascination with multisensory experiences and the intersection of art and technology.
-
-Research Question
-
-Can a virtual reality environment that visually interprets music in real time simulate a synesthetic experience?
-
-Methodology
-
-Iterative development with embedded user testing.
-
-Audio data transformed via FFT and mapped to particle systems in Unity.
-
-Visual identity based on psychedelic art styles.
-
-README serves as an ongoing project log.
-
-Theoretical Framework (selected excerpts)
-
-Virtual Reality: Real-time, 3D, interactive environments (Simó, 2019).
-
-Synesthesia: Sensory blending, potentially inducible via technology (Cardoso, 2013).
-
-Transhumanism: Tech-based enhancement of human experience (Diéguez, 2018).
-
-Related Work
-
-A VR application that simulates the condition synesthesia and to visualize music
-
-Simulating Synesthesia in Spatially-Based Real-time Audio-Visual Performance – Steve Gibson
-
-Agile methodologies in audiovisual production (González Valencia, 2022).
-
-External Assets Used (preliminary)
-
-Name	Author / Creator	License	Link (TBD)
-
-Cardboard XR Plugin	Google	Apache 2.0	[TBD]
-
-Particle System	Unity Asset Store Free	Creative Commons	[TBD]
-
-Sample Sounds	Freesound.org	CC BY 4.0	[TBD]
-
-Contributions
-
-This project is open to collaboration. You can contribute by:
-
-Suggesting visual or conceptual improvements
-
-Proposing new systems or optimization strategies
-
-Expanding the sonic/visual mapping logic
-
-Issues, forks, and PRs are welcome.
-
-Conclusions
-
-(To be added after user testing and iterations)
