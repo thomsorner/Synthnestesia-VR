@@ -1,4 +1,4 @@
-Synthnestesia - v0.0.3
+***Synthnestesia - v0.0.3***
 
 Bitácora abierta de una exploración sinestésica en VR
 
@@ -8,7 +8,11 @@ Este espacio no solo recopila el código fuente y documentación técnica, sino 
 
 Este proyecto nace del deseo de expandir la percepción humana mediante tecnología inmersiva. Utilizando realidad virtual como medio, busca simular la sinestesia como fenómeno estético, mezclando estímulos auditivos y visuales en un entorno envolvente.
 
-Bitácora de desarrollo
+APK: https://drive.google.com/file/d/119-O8FNaVEEeyMC1ttv_PDeBWTQ2dtdo/view?usp=sharing
+
+*Guía de instalación del proyecto en Unity pendiente*
+
+**Bitácora de desarrollo**
 
 v0.0.1 — Experimento 1: Captura y análisis de sonido
 
@@ -34,7 +38,7 @@ Conclusión: La herramienta de Google Cardboard demostró ser óptima para los o
 Los resultados fueron prometedores: se logró una respuesta visual en tiempo real satisfactoria, aunque se deben seguir ajustando los efectos y trabajar en una identidad visual más definida.
 
 
-Synthnestesia - v0.0.3
+***Synthnestesia - v0.0.3***
 
 Open Logbook of a Synesthetic Exploration in VR
 
@@ -44,7 +48,9 @@ This space not only compiles the source code and technical documentation, but al
 
 This project was born from the desire to expand human perception through immersive technology. Using virtual reality as a medium, it aims to simulate synesthesia as an aesthetic phenomenon, blending auditory and visual stimuli in an enveloping environment.
 
-Development Log
+APK: https://drive.google.com/file/d/119-O8FNaVEEeyMC1ttv_PDeBWTQ2dtdo/view?usp=sharing
+
+**Development Log**
 
 v0.0.1 — Experiment 1: Audio capture and analysis
 
